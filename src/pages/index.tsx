@@ -1,13 +1,34 @@
 import type { CustomNextPage } from 'next';
 import { AppLayout } from 'src/layout';
+import { selectCount } from 'src/reducks/CounterStore';
+import { decrement, increment } from 'src/reducks/CounterStore/slices';
+import { useAppDispatch, useAppSelector } from 'src/reducks/hooks';
 
 import styles from './index.module.scss';
 
-type TestString = string;
-
 const Index: CustomNextPage = () => {
-  const foo: TestString = 'index';
-  return <div className={styles.test}>{foo}</div>;
+  const count = useAppSelector(selectCount);
+  const dispatch = useAppDispatch();
+  return (
+    <div>
+      <div className={styles.test}>index</div>
+      <div>
+        <button
+          aria-label="Increment value"
+          onClick={() => {return dispatch(increment())}}
+        >
+          Increment
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Decrement value"
+          onClick={() => {return dispatch(decrement())}}
+        >
+          Decrement
+        </button>
+      </div>
+    </div>
+  );
 };
 
 Index.getLayout = AppLayout;

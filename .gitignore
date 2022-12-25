@@ -37,8 +37,8 @@ yarn-error.log*
 *.tsbuildinfo
 
 # .d.module.scss
-*.d.module.scss
-*.d.scss
+*.module.scss.d.ts
+*.scss.d.ts
 
 # text
 memo.txt
