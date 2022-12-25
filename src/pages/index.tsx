@@ -15,14 +15,18 @@ const Index: CustomNextPage = () => {
       <div>
         <button
           aria-label="Increment value"
-          onClick={() => {return dispatch(increment())}}
+          onClick={() => {
+            return dispatch(increment());
+          }}
         >
           Increment
         </button>
         <span>{count}</span>
         <button
           aria-label="Decrement value"
-          onClick={() => {return dispatch(decrement())}}
+          onClick={() => {
+            return dispatch(decrement());
+          }}
         >
           Decrement
         </button>
