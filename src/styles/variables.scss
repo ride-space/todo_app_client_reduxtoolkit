@@ -1,11 +1,10 @@
-
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 // font-family
-$font-family: "Fira Sans", "Noto Sans JP", sans-serif;
-$font-family-ja: "Noto Sans JP", sans-serif;
+$font-family: 'Fira Sans', 'Noto Sans JP', sans-serif;
+$font-family-ja: 'Noto Sans JP', sans-serif;
 
 // placeholder色
 $placeholderColor: #c3c3c3;
@@ -27,7 +26,7 @@ $white: #fff;
 $main: #163f74;
 $main-w: #eef3f8;
 $main-navy: #002a52;
-$accent-y: #FFF400;
+$accent-y: #fff400;
 $accent-p: #d33365;
 
 // placeholder
@@ -47,13 +46,18 @@ $accent-p: #d33365;
 }
 
 // font-face設定
-@mixin fontFace($name:test, $weight:normal, $path:test ,$type:otf ,$type_text:opentype) {
+@mixin fontFace(
+  $name: test,
+  $weight: normal,
+  $path: test,
+  $type: otf,
+  $type_text: opentype
+) {
   @font-face {
     font-family: $name;
     font-weight: $weight;
-    src:
-    url(#{$path}.woff) format('woff'),
-    url(#{$path}.#{$type}) format('#{$type_text}');
+    src: url(#{$path}.woff) format('woff'),
+      url(#{$path}.#{$type}) format('#{$type_text}');
   }
 }
 
@@ -65,7 +69,7 @@ $accent-p: #d33365;
 }
 
 @mixin tab {
-  @media only screen and (min-width:#{$bp-sp}) and ( max-width:#{$bp-tab})  {
+  @media only screen and (min-width:#{$bp-sp}) and ( max-width:#{$bp-tab}) {
     @content;
   }
 }
@@ -75,7 +79,6 @@ $accent-p: #d33365;
     @content;
   }
 }
-
 
 @mixin min($width) {
   @media only screen and (min-width: #{$width}px) {

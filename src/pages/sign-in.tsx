@@ -1,5 +1,5 @@
-import type { CustomNextPage } from "next";
-import { AuthLayout } from "src/layout";
+import type { CustomNextPage } from 'next';
+import { AuthLayout } from 'src/layout';
 
 const SignIn: CustomNextPage = () => {
   return <div>sign in</div>;

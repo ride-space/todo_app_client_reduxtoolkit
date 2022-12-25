@@ -1,1 +1,1 @@
-export { getPath } from "./path";
+export { getPath } from './path';

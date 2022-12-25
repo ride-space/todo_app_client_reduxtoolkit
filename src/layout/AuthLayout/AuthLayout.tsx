@@ -1,7 +1,7 @@
-import { Center, Container } from "@mantine/core";
-import type { CustomLayout } from "next";
+import { Center, Container } from '@mantine/core';
+import type { CustomLayout } from 'next';
 
-import { LayoutErrorBoundary } from "../LayoutErrorBoundary";
+import { LayoutErrorBoundary } from '../LayoutErrorBoundary';
 
 export const AuthLayout: CustomLayout = (page) => {
   return (
@@ -9,7 +9,7 @@ export const AuthLayout: CustomLayout = (page) => {
       sx={(theme) => {
         return {
           backgroundColor: theme.colors.gray[0],
-          minHeight: "100vh",
+          minHeight: '100vh',
         };
       }}
     >

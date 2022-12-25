@@ -1,7 +1,7 @@
 const PATH = {
-  FOO: "/foo/[fooId]",
-  INDEX: "/",
-  SIGN_IN: "/sign-in",
+  FOO: '/foo/[fooId]',
+  INDEX: '/',
+  SIGN_IN: '/sign-in',
 } as const;
 
 export const getPath = (pathKey: keyof typeof PATH, ...args: string[]) => {
@@ -11,7 +11,7 @@ export const getPath = (pathKey: keyof typeof PATH, ...args: string[]) => {
     return val;
   }
 
-  const dirs = val.slice(1).split("/");
+  const dirs = val.slice(1).split('/');
 
   const newPath = dirs.map((dir) => {
     if (dir.match(/\[.*?\]/)) {
@@ -22,5 +22,5 @@ export const getPath = (pathKey: keyof typeof PATH, ...args: string[]) => {
     return dir;
   });
 
-  return "/" + newPath.join("/");
+  return '/' + newPath.join('/');
 };
