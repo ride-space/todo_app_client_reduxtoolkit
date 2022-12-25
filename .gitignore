@@ -39,3 +39,6 @@ yarn-error.log*
 # .d.module.scss
 *.d.module.scss
 *.d.scss
+
+# text
+memo.txt
