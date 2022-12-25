@@ -2,7 +2,7 @@ import type { CustomNextPage } from "next";
 import { AppLayout } from "src/layout";
 
 const Index: CustomNextPage = () => {
-  return <div>index</div>;
+  return <div>Index</div>;
 };
 
 Index.getLayout = AppLayout;
