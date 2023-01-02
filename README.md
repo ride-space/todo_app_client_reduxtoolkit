@@ -1,5 +1,5 @@
 # Next.js + TypeScript + Redux Toolkit + Sass + Css Modules + Mantine + ESLint + Prettier + Husky + Jest
 
-```bash
-yarn create next-app --example https://github.com/kazun1224/NextJs_TypeScript_ReduxToolkit_Sass_CSSMdules_Mantine_ESLint_Prettier_Template.git
-```
+todoアプリ
+redux toolkitの試し
+rtk query を利用した認証機能の実装
