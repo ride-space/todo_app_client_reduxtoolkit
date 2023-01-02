@@ -3,3 +3,4 @@
 todoアプリ
 redux toolkitの試し
 rtk query を利用した認証機能の実装
+awsの検証用
