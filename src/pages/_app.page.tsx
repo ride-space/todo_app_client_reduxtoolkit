@@ -5,7 +5,7 @@ import { MantineProvider } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
 import type { CustomAppPage } from 'next/app';
 import { Provider } from 'react-redux';
-import { store } from 'src/reducks/store';
+import { store } from 'src/reducks/store/store';
 
 const App: CustomAppPage = ({ Component, pageProps }) => {
   const getLayout =
