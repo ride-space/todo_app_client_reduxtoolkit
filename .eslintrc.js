@@ -14,7 +14,7 @@ module.exports = {
     // ブロックの中括弧（{}）を省略しない
     curly: 'error',
     // console.log をエラーにする
-    'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
+    // 'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
     // Enum の禁止
     'no-restricted-syntax': [
       'error',
