@@ -7,4 +7,5 @@ export const serverApi = createApi({
   endpoints: () => {
     return {};
   },
+  tagTypes: ['Todo','Todos'],
 });
