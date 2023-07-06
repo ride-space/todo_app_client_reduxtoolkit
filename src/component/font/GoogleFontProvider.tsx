@@ -1,5 +1,5 @@
-import { Inter } from '@next/font/google'
-import  type{ ReactNode} from "react";
+import { Inter } from '@next/font/google';
+import type { ReactNode } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -7,7 +7,5 @@ const inter = Inter({
 })
 
 export const GoogleFontProvider = ({ children }: { children: ReactNode }) => {
-  return (
-    <div className={inter.className}>{children}</div>
-  )
-  }
+  return <div className={inter.className}>{children}</div>;
+};
