@@ -19,6 +19,7 @@
     "@emotion/react": "11.10.5",
     "@emotion/server": "11.10.0",
     "@mantine/core": "5.9.6",
+    "@mantine/dates": "^6.0.13",
     "@mantine/form": "^5.9.6",
     "@mantine/hooks": "5.9.6",
     "@mantine/next": "5.9.6",
@@ -26,15 +27,18 @@
     "@next/font": "^13.1.1",
     "@reduxjs/toolkit": "^1.9.1",
     "@tabler/icons": "1.119.0",
+    "@tabler/icons-react": "^2.22.0",
     "axios": "1.2.2",
     "canvas": "^2.11.0",
     "konva": "^8.4.0",
+    "mantine-react-table": "^1.0.0-beta.8",
     "next": "13.1.1",
     "next-auth": "^4.21.1",
     "next-redux-wrapper": "^8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "3.1.4",
+    "react-infinite-scroll-hook": "^4.1.1",
     "react-konva": "^18.2.3",
     "react-redux": "^8.0.5",
     "react-use": "^17.4.0",
@@ -76,5 +80,10 @@
     "ts-node": "^10.9.1",
     "typed-scss-modules": "^7.0.1",
     "typescript": "4.9.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": ".husky/pre-commit.sh"
+    }
   }
 }
